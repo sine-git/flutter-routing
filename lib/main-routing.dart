@@ -8,13 +8,13 @@ import 'package:routing/user/home-page.dart';
 import 'package:routing/user/login-page.dart';
 import 'package:routing/user/user-page.dart';
 
-import 'animations/animation.dart';
+import 'web_socket/chat-page.dart';
 
 final mainRoutes = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => const AnimationContainer(),
+      builder: (context, state) => const ChatPage(),
     ),
     GoRoute(
         path: '/user',
